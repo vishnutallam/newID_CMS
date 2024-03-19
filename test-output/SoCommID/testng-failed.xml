@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SoCommID]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.ID_CMS.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="SoComm Zone(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ID_CMS.manageOrderDeclineFlowTests.TC002_Edit">
+        <methods>
+          <include name="TC002_Edit"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="SendingMail"/>
+        </methods>
+      </class> <!-- com.ID_CMS.manageOrderDeclineFlowTests.TC002_Edit -->
+      <class name="com.ID_CMS.manageOrderDeclineFlowTests.TC003_UpdateAddress">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC003_UpdateAddress"/>
+          <include name="setup"/>
+          <include name="SendingMail"/>
+        </methods>
+      </class> <!-- com.ID_CMS.manageOrderDeclineFlowTests.TC003_UpdateAddress -->
+      <class name="com.ID_CMS.manageOrderDeclineFlowTests.TC005_DeclineOrder">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="SendingMail"/>
+          <include name="TC005_DeclineOrder"/>
+        </methods>
+      </class> <!-- com.ID_CMS.manageOrderDeclineFlowTests.TC005_DeclineOrder -->
+    </classes>
+  </test> <!-- SoComm Zone(failed) -->
+</suite> <!-- Failed suite [SoCommID] -->

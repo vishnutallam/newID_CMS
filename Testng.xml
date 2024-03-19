@@ -1,0 +1,53 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SoCommID">
+
+	    <listeners>
+		<listener class-name="com.ID_CMS.utilities.Reporting" />
+	</listeners>
+
+	<test name="SoComm Zone">
+		<parameter name="browser" value="chrome" />
+	 	<!--<classes>
+		    
+	        <class name="com.ID_CMS.manageOrderAcceptFlowTests.TC002_Edit" />
+			<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC003_UpdateAddress" />
+			<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC005_AcceptOrder" />
+			<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC006_Del_Ful" />
+				</classes> --> 
+		
+		
+		
+		
+        <classes>
+		   
+	        <class name="com.ID_CMS.manageOrderDeclineFlowTests.TC002_Edit" />
+			<class name="com.ID_CMS.manageOrderDeclineFlowTests.TC003_UpdateAddress" />
+			<class name="com.ID_CMS.manageOrderDeclineFlowTests.TC005_DeclineOrder" />
+		</classes>
+  <!--  <packages>
+	<package name="com.ID.manageOrderDeclineFlowTests"/>
+	</packages>-->
+	
+<!--<packages>
+		<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC004_AddNewPro" />
+
+	<class name="com.ID_CMS.manageOrderDeclineFlowTests.TC001_OrderFromWebsite" />
+ <package name="com.ID.manageOrdersTests"/>
+<package name="com.ID.manageCategoryTests"/>
+<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC005_DeclineOrder" />
+<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC004_AddNewPro" />
+
+<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC001_OrderFromWebsite" />
+<class name="com.ID_CMS.manageOrderAcceptFlowTests.TC006_Del_Ful" />
+
+
+ <class name="com.ID_CMS.manageOrderDeclineFlowTests.TC001_OrderFromWebsite" />
+</packages> -->
+
+	</test>
+
+</suite>
+
+
